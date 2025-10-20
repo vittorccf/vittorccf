@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DevClub | Portifólio </title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Inicio</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="./img/profile.jpg" alt="Foto de Vittor Freitas" class="foto-perfil">
+        <h1>Vittor Freitas</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Full Stack | Analista de Dados</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Sou Vittor Freitas, profissional de tecnologia com foco em dados, automação e
+                integrações. Tenho experiência com suporte, implantação e testes, além de conhecimentos em SQL, Python e
+                React, sempre buscando transformar processos em soluções eficientes e escaláveis.</p>
+        </div>
+    </section>
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./img/projeto1.png" alt="Projeto 1" class="projetos-imagem">
+                <h3 class="info-projeto">Projeto 1</h3>
+                <p class="paragrafo-projeto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque minima cum voluptatum quam, nihil nemo minus maiores reiciendis facere.</p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/projeto2.png" alt="Projeto 2" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projeto">Projeto 2</h3>
+                    <p class="paragrafo-projeto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque minima cum voluptatum quam, nihil nemo minus maiores reiciendis facere.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/projeto3.png" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projeto">Projeto 3</h3>
+                    <p class="paragrafo-projeto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque minima cum voluptatum quam, nihil nemo minus maiores reiciendis facere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos" onsubmit="enviarWhats(event)">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+
+        <form class="formulario-contato" id="formulario">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" id="mensagem" rows="4"></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar</button>
+        </form>
+
+    </section>
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault(); /* Evita o comportamento padrão do formulário de recarregar a página */
+            const mensagem = document.getElementById('mensagem'); /* Mantém uma referência ao campo de mensagem*/ 
+            const telefone = '556281079036';
+            const texto = `Olá, Vittor. Me chamo ${nome.value}. ${mensagem.value}`; /* Cria a mensagem formatada */
+            const msgFormatada = encodeURIComponent(texto); /* Codifica a mensagem para URL, encode URI formata o texto para formato web*/
+            const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${msgFormatada}`; /* Cria a URL completa do WhatsApp*/
+            window.open(url, '_blank'); /*  Abre a URL em uma nova aba */
+        }
+    </script>
+</body>
+
+</html>
