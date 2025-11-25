@@ -298,6 +298,36 @@ h1 {
         radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
         var(--maisEscuro);
 }
+.icone_contato-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.icone_contato-item .icone-contato {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.texto-contato {
+    color: var(--claro);
+    text-decoration: none;
+    font-size: small;
+}
+
+.info-contato {
+    display: flex;
+    gap: 20px; /* Espaçamento entre email e telefone */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+}
+
+
 
 @keyframes flutuar {
 

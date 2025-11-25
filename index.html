@@ -31,39 +31,42 @@
     <main id="inicio" class="cabecalho">
         <img src="./img/profile.jpg" alt="Foto de Vittor Freitas" class="foto-perfil">
         <h1>Vittor Freitas</h1>
-        <p class="cabecalho-sub-titulo">Desenvolvedor Full Stack | Analista de Dados</p>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Full Stack | Machine Learning & Data Analytics</p>
+        <img src="" alt="">
     </main>
 
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre Mim</h2>
         <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Sou Vittor Freitas, profissional de tecnologia com foco em dados, automação e
-                integrações. Tenho experiência com suporte, implantação e testes, além de conhecimentos em SQL, Python e
-                React, sempre buscando transformar processos em soluções eficientes e escaláveis.</p>
+            <p class="sobre-paragrafo">Sou Vittor Freitas, profissional de tecnologia com experiência prática em Suporte,
+                Implantação e Testes de Sistemas, atuando desde os 18 anos em ambientes corporativos de TI. Atualmente, 
+                curso Análise e Desenvolvimento de Sistemas e Ciência de Dados e Inteligência Artificial, formações que 
+                reforçam tanto a base de engenharia de software quanto os fundamentos de estatística, modelagem e aprendizado de máquina.</p>
         </div>
     </section>
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
-            <div class="projetos-card">
-                <img src="./img/projeto1.png" alt="Projeto 1" class="projetos-imagem">
-                <h3 class="info-projeto">Projeto 1</h3>
-                <p class="paragrafo-projeto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque minima cum voluptatum quam, nihil nemo minus maiores reiciendis facere.</p>
+            <div class="projetos-card" onclick="window.open('https://vittorccf.github.io/Tapper', '_blank')">  <!-- Adiciona o evento de clique para abrir o link em uma nova aba -->
+                <img src="./img/projeto1.png" alt="Tapper" class="projetos-imagem">
+                <h3 class="info-projeto">TAPPER</h3>
+                <p class="paragrafo-projeto">Plataforma web desenvolvida para automatizar o processo de divisão de despesas em estabelecimentos comerciais, permitindo gestão individualizada de consumo e cálculo preciso de valores por participante em tempo real.</p>
             </div>
 
             <div class="projetos-card">
-                <img src="./img/projeto2.png" alt="Projeto 2" class="projetos-imagem">
+                <img src="./img/projeto2.png" alt="Ton Bot" class="projetos-imagem">
                 <div class="caixa-textos-projeto">
-                    <h3 class="info-projeto">Projeto 2</h3>
-                    <p class="paragrafo-projeto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque minima cum voluptatum quam, nihil nemo minus maiores reiciendis facere.</p>
+                    <h3 class="info-projeto">Ton Bot</h3>
+                    <p class="paragrafo-projeto">Bot automatizado para WhatsApp desenvolvido para otimizar a comunicação em grupos através de funcionalidades como menções em massa, criação dinâmica de stickers e gerenciamento de lembretes.
+</p>
                 </div>
             </div>
 
             <div class="projetos-card">
                 <img src="./img/projeto3.png" alt="Projeto 3" class="projetos-imagem">
                 <div class="caixa-textos-projeto">
-                    <h3 class="info-projeto">Projeto 3</h3>
-                    <p class="paragrafo-projeto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque minima cum voluptatum quam, nihil nemo minus maiores reiciendis facere.</p>
+                    <h3 class="info-projeto">Projeto em Desenvolvimento</h3>
+                    <p class="paragrafo-projeto">Projeto em Desenvolvimento</p>
                 </div>
             </div>
         </div>
@@ -82,6 +85,30 @@
             </div>
             <button type="submit" class="botao-form">Enviar</button>
         </form>
+
+        <div class="info-contato">
+            <div class="icone_contato-item">
+                <img src="./img/icon-email.png" alt="Ícone de Email" class="icone-contato">
+                <span class="texto-contato">vittorccf@gmail.com</span>
+            </div>
+
+            <div class="icone_contato-item">
+                <img src="./img/icon-phone.png" alt="Ícone de Telefone" class="icone-contato">
+                <span class="texto-contato">(62) 9 8107-9036</span>
+            </div>
+        </div>
+
+        <div class="info-contato">
+            <div class="icone_contato-item" onclick="window.open('https://www.linkedin.com/in/vittorccf/', '_blank')" style="cursor: pointer;">
+                <img src="./img/icon-linkedin.png" alt="Ícone do LinkedIn" class="icone-contato">
+                <span class="texto-contato">Vittor Freitas</span>
+            </div>
+
+            <div class="icone_contato-item" onclick="window.open('https://github.com/vittorccf', '_blank')" style="cursor: pointer;">
+                <img src="./img/icon-github.png" alt="Ícone do GitHub" class="icone-contato">
+                <span class="texto-contato">@vittorccf</span>
+            </div>
+        </div>
 
     </section>
     <script>
