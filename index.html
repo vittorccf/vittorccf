@@ -4,123 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vittor Freitas — Quality Engineer & Desenvolvedor Full Stack. Cypress, Playwright, Vue 3, Node.js.">
+    <meta name="author" content="Vittor Freitas">
+    <meta name="theme-color" content="#0f172a">
+
+    <meta property="og:title" content="Vittor Freitas — Quality Engineer & Dev Full Stack">
+    <meta property="og:description" content="Quality Engineer & Desenvolvedor Full Stack. Cypress, Playwright, Vue 3, Node.js.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.vittorccf.com.br">
+    <meta property="og:image" content="https://www.vittorccf.com.br/img/profile.jpg">
+    <meta name="twitter:card" content="summary">
+
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" type="imagex/png" href="./img/icon_site.ico">
-    <title>Vittor Freitas</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/icon_site.ico">
+    <title>Vittor Freitas — Quality Engineer & Dev Full Stack</title>
 </head>
 
 <body>
-    <div class="particulas"></div>
-    <nav class="navegacao">
-        <ul class="menu">
-            <li>
-                <a href="#inicio" class="menu-link">Inicio</a>
-            </li>
-            <li>
-                <a href="#sobre" class="menu-link">Sobre</a>
-            </li>
-            <li>
-                <a href="#projetos" class="menu-link">Projetos</a>
-            </li>
-            <li>
-                <a href="#contatos" class="menu-link">Contato</a>
-            </li>
-        </ul>
+    <div class="particulas" aria-hidden="true"></div>
 
+    <nav class="navegacao" aria-label="Navegação principal">
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contatos" class="menu-link">Contato</a></li>
+        </ul>
     </nav>
 
     <main id="inicio" class="cabecalho">
         <img src="./img/profile.jpg" alt="Foto de Vittor Freitas" class="foto-perfil">
         <h1>Vittor Freitas</h1>
-        <p class="cabecalho-sub-titulo">Desenvolvedor Full Stack Junior<br>Analista de Qualidade e Automações Pleno<br>Machine Learning & Data Analytics</p>
-        <img src="" alt="">
+        <p class="cabecalho-sub-titulo">
+            Quality Engineer &amp; Desenvolvedor Full Stack
+            <span class="cabecalho-stack">Cypress &nbsp;•&nbsp; Playwright &nbsp;•&nbsp; Vue 3 &nbsp;•&nbsp; Node.js</span>
+        </p>
     </main>
 
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre Mim</h2>
         <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Sou Vittor Freitas, profissional de tecnologia com experiência prática em Suporte,
-                Implantação e Testes de Sistemas, atuando desde os 18 anos em ambientes corporativos de TI. Graduado em Análise e Desenvolvimento de Sistemas e cursando Ciência de Dados e Inteligência Artificial, formações que 
-                reforçam tanto a base de engenharia de software quanto os fundamentos de estatística, modelagem e aprendizado de máquina.</p>
+            <p class="sobre-paragrafo">
+                Quality Engineer e Desenvolvedor Full Stack Júnior, com mais de quatro anos
+                em testes, automação e desenvolvimento web. Graduado em Análise e Desenvolvimento de
+                Sistemas e cursando Ciência de Dados, com foco em código limpo, testável e bem documentado.
+            </p>
         </div>
     </section>
+
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
-            <div class="projetos-card" onclick="window.open('https://vittorccf.github.io/Tapper', '_blank')">  <!-- Adiciona o evento de clique para abrir o link em uma nova aba -->
-                <img src="./img/projeto1.png" alt="Tapper" class="projetos-imagem">
-                <h3 class="info-projeto">TAPPER</h3>
-                <p class="paragrafo-projeto">Plataforma web desenvolvida para automatizar o processo de divisão de despesas em estabelecimentos comerciais, permitindo gestão individualizada de consumo e cálculo preciso de valores por participante em tempo real.</p>
-            </div>
 
-            <div class="projetos-card" onclick="window.open('https://api.whatsapp.com/send/?phone=%2B5562982409548&text=Oi%2C+Ton', '_blank')">
-                <img src="./img/projeto2.png" alt="Ton Bot" class="projetos-imagem">
+            <article class="projetos-card" tabindex="0" role="link"
+                     aria-label="Abrir projeto Tapper"
+                     onclick="window.open('https://vittorccf.github.io/Tapper', '_blank')"
+                     onkeydown="if(event.key==='Enter'){window.open('https://vittorccf.github.io/Tapper','_blank')}">
+                <img src="./img/projeto1.png" alt="Captura de tela do Tapper" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projeto">Tapper</h3>
+                    <p class="paragrafo-projeto">
+                        Plataforma web para divisão de despesas em bares e restaurantes, com gestão
+                        individual de consumo e cálculo em tempo real.
+                    </p>
+                </div>
+            </article>
+
+            <article class="projetos-card" tabindex="0" role="link"
+                     aria-label="Conversar com o Ton Bot no WhatsApp"
+                     onclick="window.open('https://api.whatsapp.com/send/?phone=%2B5562982409548&text=Oi%2C+Ton', '_blank')"
+                     onkeydown="if(event.key==='Enter'){window.open('https://api.whatsapp.com/send/?phone=%2B5562982409548&text=Oi%2C+Ton','_blank')}">
+                <img src="./img/projeto2.png" alt="Ilustração do Ton Bot" class="projetos-imagem">
                 <div class="caixa-textos-projeto">
                     <h3 class="info-projeto">Ton Bot</h3>
-                    <p class="paragrafo-projeto">TonBot é um bot para WhatsApp que transforma imagens e vídeos em stickers na hora. Envie a mídia com o comando como legenda, responda uma mídia ou mande a mídia e o comando em até 5 minutos — o bot cuida do resto. Suporta stickers em tamanho original, recortados e no modo low quality estilo meme retrô. Adicione em qualquer grupo e pronto.
-</p>        
+                    <p class="paragrafo-projeto">
+                        Bot de WhatsApp que transforma imagens e vídeos em stickers na hora —
+                        original, recortado ou no estilo meme retrô.
+                    </p>
                 </div>
-                
-            </div>
+            </article>
 
-            <div class="projetos-card">
-                <img src="./img/ampulheta.gif" alt="Projeto 3" class="projetos-imagem">
+            <article class="projetos-card" aria-label="Projeto Saluti">
+                <img src="./img/projeto3.png" alt="Captura de tela do Saluti" class="projetos-imagem">
                 <div class="caixa-textos-projeto">
-                    <h3 class="info-projeto">Projeto em Desenvolvimento</h3>
-                    <p class="paragrafo-projeto">...</p>
+                    <h3 class="info-projeto">Saluti</h3>
+                    <p class="paragrafo-projeto">
+                        ERP SaaS para profissionais de saúde mental e clínicas, com automação
+                        financeira-fiscal e IA preditiva (LUMA). Stack: Next.js 14, TypeScript,
+                        Prisma e Tailwind.
+                    </p>
                 </div>
-            </div>
+            </article>
+
         </div>
     </section>
 
-    <section id="contatos" class="contatos" onsubmit="enviarWhats(event)">
+    <section id="contatos" class="contatos">
         <h2 class="contatos-titulo">Entre em Contato</h2>
 
-        <form class="formulario-contato" id="formulario">
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
             <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form" id="nome">
+                <label for="nome" class="sr-only">Nome</label>
+                <input type="text" placeholder="Nome" class="campo-form" id="nome" required>
             </div>
 
             <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua Mensagem" id="mensagem" rows="4"></textarea>
+                <label for="mensagem" class="sr-only">Mensagem</label>
+                <textarea class="campo-form" placeholder="Digite sua mensagem" id="mensagem" rows="4" required></textarea>
             </div>
+
             <button type="submit" class="botao-form">Enviar</button>
         </form>
 
         <div class="info-contato">
-            <div class="icone_contato-item">
-                <img src="./img/icon-email.png" alt="Ícone de Email" class="icone-contato">
+            <a class="icone_contato-item" href="mailto:vittorccf@gmail.com">
+                <img src="./img/icon-email.png" alt="" class="icone-contato" aria-hidden="true">
                 <span class="texto-contato">vittorccf@gmail.com</span>
-            </div>
+            </a>
 
-            <div class="icone_contato-item">
-                <img src="./img/icon-phone.png" alt="Ícone de Telefone" class="icone-contato">
+            <a class="icone_contato-item" href="tel:+5562981079036">
+                <img src="./img/icon-phone.png" alt="" class="icone-contato" aria-hidden="true">
                 <span class="texto-contato">(62) 9 8107-9036</span>
-            </div>
+            </a>
         </div>
 
         <div class="info-contato">
-            <div class="icone_contato-item" onclick="window.open('https://www.linkedin.com/in/vittorccf/', '_blank')" style="cursor: pointer;">
-                <img src="./img/icon-linkedin.png" alt="Ícone do LinkedIn" class="icone-contato">
+            <a class="icone_contato-item" href="https://www.linkedin.com/in/vittorccf/" target="_blank" rel="noopener noreferrer">
+                <img src="./img/icon-linkedin.png" alt="" class="icone-contato" aria-hidden="true">
                 <span class="texto-contato">Vittor Freitas</span>
-            </div>
+            </a>
 
-            <div class="icone_contato-item" onclick="window.open('https://github.com/vittorccf', '_blank')" style="cursor: pointer;">
-                <img src="./img/icon-github.png" alt="Ícone do GitHub" class="icone-contato">
+            <a class="icone_contato-item" href="https://github.com/vittorccf" target="_blank" rel="noopener noreferrer">
+                <img src="./img/icon-github.png" alt="" class="icone-contato" aria-hidden="true">
                 <span class="texto-contato">@vittorccf</span>
-            </div>
+            </a>
         </div>
-
     </section>
+
     <script>
         function enviarWhats(event) {
-            event.preventDefault(); /* Evita o comportamento padrão do formulário de recarregar a página */
-            const mensagem = document.getElementById('mensagem'); /* Mantém uma referência ao campo de mensagem*/ 
+            event.preventDefault();
+            const nome = document.getElementById('nome');
+            const mensagem = document.getElementById('mensagem');
             const telefone = '556281079036';
-            const texto = `Olá, Vittor. Me chamo ${nome.value}. ${mensagem.value}`; /* Cria a mensagem formatada */
-            const msgFormatada = encodeURIComponent(texto); /* Codifica a mensagem para URL, encode URI formata o texto para formato web*/
-            const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${msgFormatada}`; /* Cria a URL completa do WhatsApp*/
-            window.open(url, '_blank'); /*  Abre a URL em uma nova aba */
+            const texto = `Olá, Vittor. Me chamo ${nome.value}. ${mensagem.value}`;
+            const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${encodeURIComponent(texto)}`;
+            window.open(url, '_blank');
         }
     </script>
 </body>
