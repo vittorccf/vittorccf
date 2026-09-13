@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vittor Freitas | Quality Engineer & Desenvolvedor Full Stack. Cypress, Playwright, Vue 3, Node.js.">
+    <meta name="description" content="Vittor Freitas | Quality Engineer & Desenvolvedor Full Stack. Cypress, Playwright, Vue 3, Node.js, Java.">
     <meta name="author" content="Vittor Freitas">
-    <meta name="theme-color" content="#0f172a">
+    <meta name="theme-color" content="#0a0a0b">
 
     <meta property="og:title" content="Vittor Freitas | Quality Engineer & Dev Full Stack">
-    <meta property="og:description" content="Quality Engineer & Desenvolvedor Full Stack. Cypress, Playwright, Vue 3, Node.js.">
+    <meta property="og:description" content="Quality Engineer & Desenvolvedor Full Stack. Cypress, Playwright, Vue 3, Node.js, Java.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.vittorccf.com.br">
     <meta property="og:image" content="https://www.vittorccf.com.br/img/profile.jpg">
     <meta name="twitter:card" content="summary">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="./img/icon_site.ico">
@@ -21,45 +25,110 @@
 </head>
 
 <body>
-    <div class="particulas" aria-hidden="true"></div>
+    <div class="grade-fundo" aria-hidden="true"></div>
 
     <nav class="navegacao" aria-label="Navegação principal">
-        <ul class="menu">
-            <li><a href="#inicio" class="menu-link">Início</a></li>
-            <li><a href="#sobre" class="menu-link">Sobre</a></li>
-            <li><a href="#habilidades" class="menu-link">Habilidades</a></li>
-            <li><a href="#projetos" class="menu-link">Projetos</a></li>
-            <li><a href="#contatos" class="menu-link">Contato</a></li>
-        </ul>
+        <div class="nav-inner">
+            <a href="#inicio" class="nav-logo">VF</a>
+            <ul class="menu">
+                <li><a href="#sobre" class="menu-link">Sobre</a></li>
+                <li><a href="#experiencia" class="menu-link">Experiência</a></li>
+                <li><a href="#habilidades" class="menu-link">Habilidades</a></li>
+                <li><a href="#projetos" class="menu-link">Projetos</a></li>
+                <li><a href="#contatos" class="menu-link">Contato</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main id="inicio" class="cabecalho">
-        <img src="./img/profile.jpg" alt="Foto de Vittor Freitas" class="foto-perfil">
+        <p class="eyebrow">&gt; whoami</p>
+        <div class="foto-moldura">
+            <img src="./img/profile.jpg" alt="Foto de Vittor Freitas" class="foto-perfil">
+        </div>
         <h1>Vittor Freitas</h1>
         <p class="cabecalho-sub-titulo">
-            Quality Engineer &amp; Desenvolvedor Full Stack
-            <span class="cabecalho-stack">Cypress &nbsp;|&nbsp; Playwright &nbsp;|&nbsp; Vue 3 &nbsp;|&nbsp; Node.js</span>
+            <span class="cabecalho-cargo">Quality Engineer &amp; Desenvolvedor Full Stack</span>
+            <span class="cabecalho-stack">Cypress · Playwright · Vue 3 · Node.js · Java</span>
         </p>
+        <a href="#projetos" class="botao-cta">Ver projetos</a>
     </main>
 
-    <section id="sobre" class="sobre">
-        <h2 class="sobre-titulo">Sobre Mim</h2>
+    <section id="sobre" class="secao sobre">
+        <p class="eyebrow">$ sobre</p>
+        <h2 class="secao-titulo">Sobre mim</h2>
         <div class="sobre-caixa">
             <p class="sobre-paragrafo">
-                Quality Engineer e Desenvolvedor Full Stack Júnior, com mais de quatro anos
-                em testes, automação e desenvolvimento web. Graduado em Análise e Desenvolvimento de
-                Sistemas e cursando Ciência de Dados, com foco em código limpo, testável e bem documentado.
+                Quality Engineer e Desenvolvedor Full Stack, com mais de quatro anos entre testes,
+                automação e desenvolvimento web. Trânsito real entre as duas trilhas: QA com Cypress,
+                Playwright, Robot Framework e Selenium; e Dev Full Stack com Vue 3, Node.js, Java/Spring
+                e Next.js.
             </p>
             <p class="sobre-paragrafo">
-                Atuação ponta a ponta no ciclo de qualidade: automação em Cypress sobre Node.js,
-                testes de API REST, validação de requisitos, gestão de defeitos e integração contínua.
-                Certificação ALATS ativa e estudo em andamento para a ISTQB CTFL.
+                Graduado em Análise e Desenvolvimento de Sistemas e cursando Ciência de Dados, com
+                aplicação prática de Machine Learning em análise de qualidade e uso diário de IA
+                generativa (Claude Code, Claude API) no fluxo de trabalho.
             </p>
         </div>
     </section>
 
-    <section id="habilidades" class="habilidades">
-        <h2 class="habilidades-titulo">Habilidades</h2>
+    <section id="experiencia" class="secao secao-alt experiencia">
+        <p class="eyebrow">$ experiência</p>
+        <h2 class="secao-titulo">Trajetória</h2>
+        <ol class="timeline">
+            <li class="timeline-item">
+                <div class="timeline-periodo">mai. 2026 — atual (contrato temporário)</div>
+                <div class="timeline-cargo">Full Stack Developer <span>· Salutti · Remoto (SP)</span></div>
+                <p class="timeline-desc">
+                    ERP SaaS multi-tenant para saúde mental. Next.js 14, React, TypeScript e Prisma,
+                    com módulo financeiro-fiscal e IA aplicada ao produto.
+                </p>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-periodo">jun. 2026 — ago. 2026 (contrato temporário)</div>
+                <div class="timeline-cargo">Quality Engineer <span>· Secretaria de Estado de Governo de MG · Remoto</span></div>
+                <p class="timeline-desc">
+                    Testes funcionais e automação para sistemas de governo, incluindo o Diário Oficial
+                    do Estado. Automação de casos de teste via API do Azure DevOps.
+                </p>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-periodo">mai. 2026 — jul. 2026</div>
+                <div class="timeline-cargo">Quality Engineer <span>· iRancho · Goiânia (híbrido)</span></div>
+                <p class="timeline-desc">
+                    Automação com Playwright, testes de API e planejamento de casos de teste em BDD
+                    para fluxos críticos.
+                </p>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-periodo">nov. 2025 — jun. 2026 (voluntário)</div>
+                <div class="timeline-cargo">Full Stack Developer Jr. <span>· Cumbuca Dev · Remoto</span></div>
+                <p class="timeline-desc">
+                    Contribuição em projetos open source (JavaScript, TypeScript, Node.js, Vue 3) e
+                    code review com foco em OWASP Top 10.
+                </p>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-periodo">jan. 2026 — mai. 2026</div>
+                <div class="timeline-cargo">QA Analyst / Dev Full Stack <span>· Nectar · Goiânia</span></div>
+                <p class="timeline-desc">
+                    Automação E2E, API e mobile; apoio a migrações críticas de stack; QA em sistema
+                    agêntico com Claude API e detecção de regressões com Machine Learning.
+                </p>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-periodo">mar. 2022 — dez. 2025</div>
+                <div class="timeline-cargo">Implantação → Tester/Supervisor de Equipe <span>· Engegraph Sistemas · Goiânia</span></div>
+                <p class="timeline-desc">
+                    QA, implantação, documentação e suporte em sistema de gestão para cartórios
+                    (serventias extrajudiciais), com supervisão de equipe.
+                </p>
+            </li>
+        </ol>
+    </section>
+
+    <section id="habilidades" class="secao habilidades">
+        <p class="eyebrow">$ habilidades</p>
+        <h2 class="secao-titulo">Habilidades</h2>
         <div class="habilidades-grid">
 
             <div class="habilidade-grupo">
@@ -78,9 +147,20 @@
                 <ul class="tags">
                     <li>JavaScript</li>
                     <li>TypeScript</li>
-                    <li>Node.js</li>
+                    <li>Java</li>
                     <li>Python</li>
                     <li>C#</li>
+                </ul>
+            </div>
+
+            <div class="habilidade-grupo">
+                <h3>Backend & Frameworks</h3>
+                <ul class="tags">
+                    <li>Node.js</li>
+                    <li>Spring / Spring Boot</li>
+                    <li>JPA / Hibernate</li>
+                    <li>Laravel</li>
+                    <li>Maven</li>
                 </ul>
             </div>
 
@@ -91,7 +171,7 @@
                     <li>JSON Schema</li>
                     <li>OAuth</li>
                     <li>JWT</li>
-                    <li>Laravel</li>
+                    <li>JUnit</li>
                 </ul>
             </div>
 
@@ -141,12 +221,14 @@
             </div>
 
             <div class="habilidade-grupo">
-                <h3>Dados e IA</h3>
+                <h3>IA e Dados</h3>
                 <ul class="tags">
+                    <li>Claude Code</li>
+                    <li>Claude API</li>
+                    <li>GitHub Copilot</li>
                     <li>Pandas</li>
                     <li>NumPy</li>
                     <li>Scikit-learn</li>
-                    <li>Claude API</li>
                 </ul>
             </div>
 
@@ -164,15 +246,16 @@
                     <span>UNINTER, em curso</span>
                 </li>
                 <li>
-                    <strong>Certificação ALATS</strong>
-                    <span>Testes de Software, ativa desde 2026</span>
+                    <strong>ISTQB CTFL (Foundation Level)</strong>
+                    <span>Prova em set. 2026</span>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section id="projetos" class="projetos">
-        <h2 class="projetos-titulo">Meus Projetos</h2>
+    <section id="projetos" class="secao secao-alt projetos">
+        <p class="eyebrow">$ projetos</p>
+        <h2 class="secao-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
 
             <article class="projetos-card" tabindex="0" role="link"
@@ -268,8 +351,9 @@
         </div>
     </section>
 
-    <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">Entre em Contato</h2>
+    <section id="contatos" class="secao contatos">
+        <p class="eyebrow">$ contato</p>
+        <h2 class="secao-titulo">Entre em Contato</h2>
 
         <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
             <div class="grupo-form">
@@ -287,28 +371,32 @@
 
         <div class="info-contato">
             <a class="icone_contato-item" href="mailto:vittorccf@gmail.com">
-                <img src="./img/icon-email.png" alt="" class="icone-contato" aria-hidden="true">
+                <span class="rotulo-contato">[email]</span>
                 <span class="texto-contato">vittorccf@gmail.com</span>
             </a>
 
             <a class="icone_contato-item" href="tel:+5564999368321">
-                <img src="./img/icon-phone.png" alt="" class="icone-contato" aria-hidden="true">
+                <span class="rotulo-contato">[tel]</span>
                 <span class="texto-contato">(64) 9 9936-8321</span>
             </a>
         </div>
 
         <div class="info-contato">
             <a class="icone_contato-item" href="https://www.linkedin.com/in/vittorccf/" target="_blank" rel="noopener noreferrer">
-                <img src="./img/icon-linkedin.png" alt="" class="icone-contato" aria-hidden="true">
-                <span class="texto-contato">Vittor Freitas</span>
+                <span class="rotulo-contato">[linkedin]</span>
+                <span class="texto-contato">vittorccf</span>
             </a>
 
             <a class="icone_contato-item" href="https://github.com/vittorccf" target="_blank" rel="noopener noreferrer">
-                <img src="./img/icon-github.png" alt="" class="icone-contato" aria-hidden="true">
+                <span class="rotulo-contato">[github]</span>
                 <span class="texto-contato">@vittorccf</span>
             </a>
         </div>
     </section>
+
+    <footer class="rodape">
+        © 2026 Vittor Freitas
+    </footer>
 
     <script>
         function enviarWhats(event) {
