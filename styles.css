@@ -318,6 +318,18 @@ h1 {
     text-align: center;
 }
 
+.link-projeto {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primaria);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.link-projeto:hover {
+    text-decoration: underline;
+}
+
 .contatos {
     padding: 6rem 2rem;
     background: var(--maisEscuro);
