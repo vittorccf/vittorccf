@@ -275,57 +275,6 @@ h1 {
     margin-top: 1.25rem;
 }
 
-/* ── Experiência (timeline) ────────────────────────────── */
-.timeline {
-    list-style: none;
-    border-left: 1px solid var(--line);
-}
-
-.timeline-item {
-    position: relative;
-    padding: 0 0 2.25rem 2rem;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -5px;
-    top: 0.35rem;
-    width: 9px;
-    height: 9px;
-    background: var(--bg);
-    border: 1px solid var(--fg);
-}
-
-.timeline-item:last-child {
-    padding-bottom: 0;
-}
-
-.timeline-periodo {
-    font-size: 0.75rem;
-    color: var(--muted);
-    letter-spacing: 0.03em;
-    margin-bottom: 0.4rem;
-}
-
-.timeline-cargo {
-    font-size: 1.05rem;
-    color: var(--fg);
-    font-weight: 700;
-    margin-bottom: 0.4rem;
-}
-
-.timeline-cargo span {
-    color: var(--muted);
-    font-weight: 400;
-}
-
-.timeline-desc {
-    color: var(--muted);
-    font-size: 0.9rem;
-    max-width: 640px;
-}
-
 /* ── Habilidades ───────────────────────────────────────── */
 .habilidades-grid {
     display: grid;
