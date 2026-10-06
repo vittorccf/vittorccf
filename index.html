@@ -183,15 +183,11 @@
             <ul class="formacao-lista">
                 <li>
                     <strong>Análise e Desenvolvimento de Sistemas</strong>
-                    <span>UniGoiás, concluído em 2025</span>
+                    <span>UniGoiás, concluído em 2026</span>
                 </li>
                 <li>
                     <strong>Ciência de Dados</strong>
                     <span>UNINTER, em curso</span>
-                </li>
-                <li>
-                    <strong>ISTQB CTFL (Foundation Level)</strong>
-                    <span>Prova em set. 2026</span>
                 </li>
             </ul>
         </div>
@@ -224,15 +220,21 @@
                 <div class="caixa-textos-projeto">
                     <h3 class="info-projeto">Ton Bot</h3>
                     <p class="paragrafo-projeto">
-                        Bot de WhatsApp que transforma imagens e vídeos em figurinhas.
+                        Bot de WhatsApp construído com Baileys (Node.js): conversão de imagens,
+                        vídeos e GIFs em figurinhas, download de mídia do YouTube, Twitter/X e
+                        Instagram, fluxo conversacional de cobrança via Pix e formulários
+                        interativos com persistência de respostas.
                     </p>
                 </div>
             </article>
 
-            <article class="projetos-card" aria-label="Projeto Saluti">
-                <img src="./img/projeto3.png" alt="Captura de tela do Saluti" class="projetos-imagem">
+            <article class="projetos-card" aria-label="Salutti"
+                     aria-label="Abrir site Salutti"
+                     onclick="window.open('https://salutti.vercel.app', '_blank')"
+                     onkeydown="if(event.key==='Enter'){window.open('https://salutti.vercel.app','_blank')}">
+                <img src="./img/salutti-logo.svg" alt="Logo" class="projetos-imagem">
                 <div class="caixa-textos-projeto">
-                    <h3 class="info-projeto">Saluti</h3>
+                    <h3 class="info-projeto">Salutti</h3>
                     <p class="paragrafo-projeto">
                         ERP SaaS para profissionais de saúde mental e clínicas, com automação
                         financeira-fiscal e IA preditiva (LUMA). Stack: Next.js 14, TypeScript,
@@ -280,9 +282,11 @@
                     <h3 class="info-projeto">BradyPus</h3>
                     <p class="paragrafo-projeto">
                         Plataforma de estudos adaptativa para concursos, ENEM, vestibular, OAB e
-                        idiomas: trilha de conteúdo gerada por IA, banco de questões ilimitado,
-                        revisão espaçada e extensão de navegador para foco. Coautoria no
-                        desenvolvimento.
+                        idiomas. Trilhas de conteúdo geradas de forma totalmente autônoma por
+                        agentes de IA orquestrados via LangGraph, com RAG (Retrieval-Augmented
+                        Generation) sobre banco vetorial ChromaDB para embasar o conteúdo gerado.
+                        Inclui banco de questões ilimitado, revisão espaçada e extensão de
+                        navegador para foco. Coautoria no desenvolvimento.
                     </p>
                     <a class="link-projeto" href="https://www.instagram.com/bradypusapp/"
                        target="_blank" rel="noopener noreferrer"
